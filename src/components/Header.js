@@ -12,8 +12,7 @@ import { Paper, TextField, Grid, Typography, Button, InputAdornment, IconButton 
 const useStyles = makeStyles(theme => ({
   root: {
     minHeight: '950px',
-    // background: `green url(${BackgroundImage}) right no-repeat`,
-    backgroundImage: `url(${BackgroundImage})`,
+    background: `linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 0%, rgba(30,67,93,0.7626400902157738) 0%, rgba(97,202,210,0.8914916308320203) 100%, rgba(64,142,173,1) 100%, rgba(58,175,211,1) 100%, rgba(0,212,255,1) 100%), url(${BackgroundImage})`,
     backgroundColor: '#6DB3F2',
     backgroundSize: 'cover',
     backgroundPosition: 'top center',
@@ -34,7 +33,7 @@ const useStyles = makeStyles(theme => ({
     margin: theme.spacing(1.5, 0),
   },
   paper: {
-    width: 500,
+    width: 350,
     backgroundColor: '#1d4568',
     padding: theme.spacing(10, 10, 1, 10),
   },
@@ -160,7 +159,7 @@ export default function Header() {
                   }}
                 />
                 <br />
-                <Button variant="contained" className={classes.button}>
+                <Button variant="contained" color="primary" className={classes.button}>
                   Sign In
                   <IconButton><ArrowRightAltIcon style={{fill: "#fff"}} /></IconButton>
                 </Button>
